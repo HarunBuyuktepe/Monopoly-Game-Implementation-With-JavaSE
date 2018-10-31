@@ -39,7 +39,7 @@ public class CakmaBoard {
 
     // MARK: Utilities
     private void getBlockStrings() throws IOException {
-        File file = new File("C:\\dist.txt");
+        File file = new File("dist.txt");
 
         BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -86,9 +86,9 @@ public class CakmaBoard {
         } else if(words[1].toLowerCase().contains("prison")) {
             block = new Prison(id,"Prison");
         } else if(words[1].toLowerCase().contains("chance")) {
-            block = new Card(id,"chance");
+            block = new Card(id,"Chance Card");
         } else if(words[1].toLowerCase().contains("publicfund")) {
-            block = new Card(id,"publicfund");
+            block = new Card(id,"Public Fund Card");
         } else if(words[1].toLowerCase().contains("startingpoint")) {
             block = new StartingPoint(id,"Starting Point");
         } else if(words[1].toLowerCase().contains("soot")) {
