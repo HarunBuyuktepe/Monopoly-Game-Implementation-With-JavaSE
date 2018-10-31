@@ -1,19 +1,21 @@
 package Game;
 
-public class Card {
+public class Card extends MapBox{
 
-    int value=0;
+    String cardName;
     int id;
-    public Card(int value,int id){
-        this.id=id;
-        this.value=value;
+    public Card(int id,String cardName){
+        super.id=id;
+        this.cardName=cardName;
     }
-    public void getCard(Player player,int value){
-        if(value<0){
-            player.substractMoney(value);
-        }
-        else{
-            player.addMoney(value);
-        }
+
+    @Override
+    public int getId() {
+        return 0;
+    }
+
+    @Override
+    public void doAction(Player player) {
+
     }
 }

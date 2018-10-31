@@ -8,10 +8,7 @@ public class Board {
     private static final ArrayList<MapBox> map =new ArrayList<MapBox>();
 
     Board() throws IOException {
-        MapCreator newMap = new MapCreator();
-        newMap.create(map);
-        for(int i=0;i<map.size();i++){
-            System.out.println(map.get(i).getName());
+
         }
 
 
@@ -28,7 +25,7 @@ public class Board {
 *
 *
 * */
-    }//Gibi methodlar
+    //Gibi methodlar
     public void moveTo(){
 
     }

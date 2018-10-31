@@ -1,13 +1,15 @@
 package Game;
 
 public class StartingPoint extends MapBox {
-    String name;
-    int loan;
-    int price;
-    Player owner;
-    StartingPoint(String name,int loan,int price,Player owner){
-        super(name, loan, price, owner);
+    int id;
+    StartingPoint(int id){
+        super.id=id;
 
+    }
+
+    @Override
+    public int getId() {
+        return 0;
     }
 
     @Override

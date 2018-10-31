@@ -2,15 +2,18 @@ package Game;
 
 public class TaxAdministration extends MapBox{
     String name;
-    int loan;
-    int price;
-    Player owner;
-    TaxAdministration(String name,int loan,int price,Player owner){
-        super(name, loan, price, owner);
+    double tax;
+
+    TaxAdministration(int id,double tax){
+        super.id=id;
+        this.tax=tax;
 
     }
 
-    public TaxAdministration() {
+
+    @Override
+    public int getId() {
+        return 0;
     }
 
     @Override

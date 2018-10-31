@@ -4,8 +4,8 @@ public class ChanceCard extends Card {
     int value=10;
     int id;
 
-    ChanceCard(int value,int id){
-        super(value,id);
+    ChanceCard(int id,String cardName){
+        super(id,cardName);
     }
 
 }
