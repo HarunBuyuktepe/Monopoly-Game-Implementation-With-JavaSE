@@ -5,8 +5,13 @@ public class Card extends MapBox{
     String cardName;
     int id;
     public Card(int id,String cardName){
-        super.id=id;
+        this.id=id;
         this.cardName=cardName;
+    }
+
+    @Override
+    public String getName() {
+        return cardName;
     }
 
     @Override

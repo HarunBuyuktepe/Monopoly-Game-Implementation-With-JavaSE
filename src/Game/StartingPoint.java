@@ -2,9 +2,15 @@ package Game;
 
 public class StartingPoint extends MapBox {
     int id;
-    StartingPoint(int id){
-        super.id=id;
+    String name;
+    StartingPoint(int id,String name){
+        this.id=id;
+        this.name=name;
+    }
 
+    @Override
+    public String getName() {
+        return name;
     }
 
     @Override

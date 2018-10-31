@@ -2,7 +2,7 @@ package Game;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Scanner;
+
 
 public class CakmaBoard {
 
@@ -15,25 +15,8 @@ public class CakmaBoard {
 
     public CakmaBoard() throws IOException {
 
-        blocks = new ArrayList<MapBox>();
-        blocks.add(new MapBox() {
-            @Override
-            public int getId() {
-                return 0;
-            }
-
-            public void doAction(Player player) {
-
-            }
-        });
-
+        blocks = new ArrayList<>();
         getBlockStrings();
-
-
-        System.out.println("There are/is " + blocks.size() + " block determined.");
-        for(int i=0;i<blocks.size();i++){
-            //System.out.println(i+""+blocks.get(i).getId());
-        }
     }
 
     // MARK: Encapsulation
@@ -75,7 +58,9 @@ public class CakmaBoard {
 
         MapBox block = null;
         String[] words = blockString.split(" ");
+
         int id=Integer.parseInt(words[0]);
+
         if(words[1].toLowerCase().contains("dist")) {
             String name = words[2];
             double priceAmount = Double.parseDouble(words[3]);
@@ -88,32 +73,36 @@ public class CakmaBoard {
             //Deed deed = new Deed(moneyPrice, moneyRent0, moneyRent1, moneyRent2, moneyRent3, moneyRent4);
             block = new District(id,name,priceAmount,development,rentAmount0,rentAmount1 ,rentAmount2,rentAmount3,rentAmount4,null);
 
-        } else if(words[1].toLowerCase().contains("incometax")) {
+        } else if(words[1].toLowerCase().contains("ıncometax")) {
             double tax = Double.parseDouble(words[2]);
-            block = new IncomeTax(id,tax);
+            block = new IncomeTax(id,tax,"Income Tax");
         } else if(words[1].toLowerCase().contains("luxurytax")) {
             double tax = Double.parseDouble(words[2]);
-            block = new LuxuryTax(id,tax);
-        } else if(words[1].toLowerCase().contains("Prison(Visitor)")) {
-            block = new Prison(id);
+            block = new LuxuryTax(id,tax,"Luxury Tax");
+        } else if(words[1].toLowerCase().contains("prison(visitor)")) {
+            block = new Prison(id,"Prison Visitor");
         }  else if(words[1].toLowerCase().contains("freeparking")) {
-            block = new FreeParking(id);
-        } else if(words[1].toLowerCase().contains("Prison")) {
-            block = new Prison(id);
-        } else if(words[1].toLowerCase().contains("Chance")) {
-            block = new Card(id,"Chance");
-        } else if(words[1].toLowerCase().contains("PublicFund")) {
-            block = new Card(id,"PublicFund");
-        } else if(words[1].toLowerCase().contains("StartingPoint")) {
-            block = new StartingPoint(id);
+            block = new FreeParking(id,"Free Parking");
+        } else if(words[1].toLowerCase().contains("prison")) {
+            block = new Prison(id,"Prison");
+        } else if(words[1].toLowerCase().contains("chance")) {
+            block = new Card(id,"chance");
+        } else if(words[1].toLowerCase().contains("publicfund")) {
+            block = new Card(id,"publicfund");
+        } else if(words[1].toLowerCase().contains("startingpoint")) {
+            block = new StartingPoint(id,"Starting Point");
         } else if(words[1].toLowerCase().contains("soot")) {
             double price = Double.parseDouble(words[3]);
             double loan = Double.parseDouble(words[4]);
             block = new Soot(id,words[2],price,loan);
         }
 
-        System.out.println(id);
+        //System.out.println(id);
         blocks.add(block);
-        System.out.println(id);
+        // System.out.println(id);
+    }
+
+    public ArrayList<MapBox> getMap() {
+        return blocks;
     }
 }

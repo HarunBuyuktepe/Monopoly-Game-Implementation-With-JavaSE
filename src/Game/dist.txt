@@ -5,7 +5,7 @@
 4 IncomeTax 20000
 5 soot HaydarpasaTrainStation 20000 300
 6 dist Sultanahmet 10000 5000 600 3000 9000 27000 40000 55000 NULL
-7 Chance 
+7 Chance
 8 dist Karakoy 10000 5000 600 3000 9000 27000 40000 55000 NULL
 9 dist Sirkeci 12000 5000 800 4000 10000 30000 35000 60000 NULL
 10 Prison(Visitor)

@@ -2,8 +2,8 @@ package Game;
 
 public class IncomeTax extends TaxAdministration {
 
-    IncomeTax(int id, double tax) {
-        super(id, tax);
+    IncomeTax(int id, double tax,String name) {
+        super(id, tax,name);
     }
 
     @Override

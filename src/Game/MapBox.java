@@ -8,9 +8,7 @@ public abstract class MapBox {
 
 
 
-    public String getName() {
-        return name;
-    }
+    public abstract String getName() ;
     public abstract int getId();
 
 

@@ -2,8 +2,15 @@ package Game;
 
 public class Prison extends MapBox {
     int id;
-    Prison(int id){
-        super.id=id;
+    String name;
+    Prison(int id,String name){
+        this.id=id;
+        this.name=name;
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     @Override

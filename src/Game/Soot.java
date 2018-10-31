@@ -7,9 +7,14 @@ public class Soot extends MapBox {
     double loan;
     Soot(int id,String name,double price,double loan){
         this.price=price;
-        super.id=id;
+        this.id=id;
         this.name=name;
         this.loan=loan;
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     @Override
