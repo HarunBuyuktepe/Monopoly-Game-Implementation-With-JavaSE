@@ -1,8 +1,8 @@
-package Game;
+package anan;
 
 public class ChanceCard extends Card {
-    int value=10;
-    int id;
+    private int value=10;
+    private int id;
 
     ChanceCard(int id,String cardName){
         super(id,cardName);

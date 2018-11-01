@@ -1,9 +1,9 @@
-package Game;
+package anan;
 
-public class TaxAdministration extends MapBox{
-    String name;
-    double tax;
-
+public class TaxAdministration extends MapBox {
+    private String name;
+    private  double tax;
+    private int id;
     TaxAdministration(int id,double tax,String name){
         this.id=id;
         this.tax=tax;

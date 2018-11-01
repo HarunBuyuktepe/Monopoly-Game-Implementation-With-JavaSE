@@ -1,8 +1,8 @@
-package Game;
+package anan;
 
 public class StartingPoint extends MapBox {
-    int id;
-    String name;
+    private int id;
+    private String name;
     StartingPoint(int id,String name){
         this.id=id;
         this.name=name;

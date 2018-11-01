@@ -1,10 +1,10 @@
-package Game;
+package anan;
 
 public class Soot extends MapBox {
-    int id;
-    String name;
-    double price;
-    double loan;
+    private int id;
+    private String name;
+    private double price;
+    private double loan;
     Soot(int id,String name,double price,double loan){
         this.price=price;
         this.id=id;

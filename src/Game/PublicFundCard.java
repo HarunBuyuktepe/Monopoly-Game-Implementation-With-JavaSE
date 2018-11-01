@@ -1,8 +1,8 @@
-package Game;
+package anan;
 
 public class PublicFundCard extends Card {
-    int id;
-    String cardName;
+    private int id;
+    private String cardName;
     PublicFundCard(int id,String cardName){
         super(id,cardName);
     }

@@ -1,24 +1,22 @@
-package Game;
-
-import java.util.ArrayList;
+package anan;
 
 public class District extends MapBox {
-    int id;
-    double priceAmount;
-    double development;
-    double rentAmount0;
-    double rentAmount1;
-    double rentAmount2;
-    double rentAmount3;
-    double rentAmount4;
-    Player owner=null;
-    String name;
+    private int id;
+    private double priceAmount;
+    private double development;
+    private double rentAmount0;
+    private double rentAmount1;
+    private double rentAmount2;
+    private double rentAmount3;
+    private double rentAmount4;
+    private Player owner=null;
+    private String name;
 
 
 
 
 
-    District(int id,String name,double priceAmount,double development,double rentAmount0, double rentAmount1, double rentAmount2, double rentAmount3, double rentAmount4,Player owner){
+    District(int id, String name, double priceAmount, double development, double rentAmount0, double rentAmount1, double rentAmount2, double rentAmount3, double rentAmount4, Player owner){
         this.id=id;
         this.name=name;
         this.priceAmount=priceAmount;

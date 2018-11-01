@@ -1,14 +1,14 @@
-package Game;
+package anan;
 
 import java.util.Random;
 
 public class Player {
-	int id;
-	String name;
-	int totalTour=0;
-	int position=0;
-	int money=0;
-	boolean inGame=false;
+	private int id;
+	private String name;
+	private int totalTour=0;
+	private int position=0;
+	private int money=0;
+	private boolean inGame=false;
 	
 	
 	public Player(int id,String name){//Our player is will created in here

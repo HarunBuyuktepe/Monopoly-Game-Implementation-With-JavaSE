@@ -1,6 +1,6 @@
-package Game;
+package anan;
 
-public class LuxuryTax extends TaxAdministration{
+public class LuxuryTax extends TaxAdministration {
     LuxuryTax(int id, double tax,String name) {
         super(id, tax, name);
     }

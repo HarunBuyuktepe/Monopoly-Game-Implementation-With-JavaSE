@@ -1,4 +1,4 @@
-package Game;
+package anan;
 
 public class IncomeTax extends TaxAdministration {
 
