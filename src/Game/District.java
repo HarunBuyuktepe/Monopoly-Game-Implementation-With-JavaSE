@@ -1,4 +1,4 @@
-package anan;
+package MonopolyGame;
 
 public class District extends MapBox {
     private int id;

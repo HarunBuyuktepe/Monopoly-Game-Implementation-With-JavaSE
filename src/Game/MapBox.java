@@ -1,4 +1,4 @@
-package anan;
+package MonopolyGame;
 
 public abstract class MapBox {
     String name;

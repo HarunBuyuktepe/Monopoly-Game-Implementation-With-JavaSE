@@ -1,4 +1,4 @@
-package anan;
+package MonopolyGame;
 
 public class PublicFundCard extends Card {
     private int id;

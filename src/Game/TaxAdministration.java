@@ -1,4 +1,4 @@
-package anan;
+package MonopolyGame;
 
 public class TaxAdministration extends MapBox {
     private String name;

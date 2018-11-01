@@ -1,4 +1,4 @@
-package anan;
+package MonopolyGame;
 
 public class ChanceCard extends Card {
     private int value=10;

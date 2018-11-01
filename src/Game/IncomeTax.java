@@ -1,4 +1,4 @@
-package anan;
+package MonopolyGame;
 
 public class IncomeTax extends TaxAdministration {
 

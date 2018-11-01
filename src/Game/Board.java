@@ -1,4 +1,4 @@
-package anan;
+package MonopolyGame;
 
 import java.io.BufferedReader;
 import java.io.File;

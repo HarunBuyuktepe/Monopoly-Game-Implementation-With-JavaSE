@@ -1,4 +1,4 @@
-package anan;
+package MonopolyGame;
 
 public class Soot extends MapBox {
     private int id;

@@ -1,4 +1,4 @@
-package anan;
+package MonopolyGame;
 
 public class FreeParking extends MapBox {
     private int id;
