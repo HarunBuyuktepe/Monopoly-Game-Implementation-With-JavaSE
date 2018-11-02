@@ -1,4 +1,4 @@
-package MonopolyGame;
+package Game;
 
 public class Prison extends MapBox {
     private int id;
@@ -15,7 +15,7 @@ public class Prison extends MapBox {
 
     @Override
     public int getId() {
-        return 0;
+        return id;
     }
 
     @Override

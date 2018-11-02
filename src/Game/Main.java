@@ -1,4 +1,4 @@
-package MonopolyGame;
+package Game;
 
 
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter player number between 1-7 : ");
         int playerNum=input.nextInt();
-        while(playerNum <= 1 || playerNum>6){
+        while(playerNum <= 1 || playerNum>7){
             System.out.println("Please enter player number between 1-7 : ");
             playerNum=input.nextInt();
         }
@@ -32,7 +32,7 @@ public class Main {
         System.out.println("\nAre you ready?");
         boolean ready=input.nextBoolean();
         ArrayList<MapBox> ourMap = a.getMap();
-        //for(int i=0; i < ourMap.size();i++)
-            //System.out.println(ourMap.get(i).getName());
+       /* for( i=0; i < ourMap.size();i++)
+            System.out.println(ourMap.get(i).getId()+"->"+ourMap.get(i).getName());*/
 	}
 }

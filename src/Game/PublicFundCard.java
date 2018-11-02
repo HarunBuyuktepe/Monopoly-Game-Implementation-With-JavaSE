@@ -1,4 +1,4 @@
-package MonopolyGame;
+package Game;
 
 public class PublicFundCard extends Card {
     private int id;

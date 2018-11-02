@@ -1,4 +1,4 @@
-package MonopolyGame;
+package Game;
 
 public class TaxAdministration extends MapBox {
     private String name;
@@ -18,7 +18,7 @@ public class TaxAdministration extends MapBox {
 
     @Override
     public int getId() {
-        return 0;
+        return id;
     }
 
     @Override

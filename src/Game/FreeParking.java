@@ -1,4 +1,4 @@
-package MonopolyGame;
+package Game;
 
 public class FreeParking extends MapBox {
     private int id;
@@ -15,7 +15,7 @@ public class FreeParking extends MapBox {
 
     @Override
     public int getId() {
-        return 0;
+        return id;
     }
 
     @Override
