@@ -1,6 +1,7 @@
 package Game;
 
 public class District extends MapBox {
+
     private int id;
     private double priceAmount;
     private double development;
@@ -12,11 +13,8 @@ public class District extends MapBox {
     private Player owner=null;
     private String name;
 
-
-
-
-
     District(int id, String name, double priceAmount, double development, double rentAmount0, double rentAmount1, double rentAmount2, double rentAmount3, double rentAmount4, Player owner){
+
         this.id=id;
         this.name=name;
         this.priceAmount=priceAmount;
@@ -31,20 +29,44 @@ public class District extends MapBox {
 
     @Override
     public String getName() {
+
         return name;
     }
 
     @Override
     public int getId() {
+
         return id;
     }
 
     public void setId(int id) {
+
         this.id = id;
     }
+
     @Override
     public void doAction(Player player) {
+        // System.out.println("Before transaction : Player " + player.getName() + " : " + player.getMoney());
+        if (player.getMoney() > priceAmount){
 
-    }
+            if(owner != null)
+                owner.addMoney(priceAmount);
 
+            player.substractMoney(priceAmount);
+            owner = player;
+            System.out.println("Player " + player.getName() + " bought " + getName() + " with " + priceAmount);
+        }
+
+
+        else{
+
+            if (owner != null) {
+                owner.addMoney(rentAmount0);
+                player.substractMoney(rentAmount0);
+                System.out.println("Player " + player.getName() + " payed " + rentAmount0 + " to Player " + owner.getName());
+            }
+
+        }
+
+    }  /* End of doAction Method */
 }

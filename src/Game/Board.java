@@ -6,16 +6,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-
 public class Board {
 
     // MARK: Properties
-
     private String boardName;
     private ArrayList<MapBox> blocks;
 
     // MARK: Constructors
-
     public Board() throws IOException {
 
         blocks = new ArrayList<>();
@@ -42,6 +39,7 @@ public class Board {
 
     // MARK: Utilities
     private void getBlockStrings() throws IOException {
+
         File file = new File("dist.txt");
 
         BufferedReader br = new BufferedReader(new FileReader(file));
@@ -49,7 +47,7 @@ public class Board {
         String st;
         while ((st = br.readLine()) != null){
             //System.out.println(st);
-            if(st!=null){
+            if(st != null){
                 createBlock(st);
             }
         }
@@ -62,9 +60,10 @@ public class Board {
         MapBox block = null;
         String[] words = blockString.split(" ");
 
-        int id=Integer.parseInt(words[0]);
+        int id = Integer.parseInt(words[0]);
 
         if(words[1].toLowerCase().contains("dist")) {
+
             String name = words[2];
             double priceAmount = Double.parseDouble(words[3]);
             double development = Double.parseDouble(words[4]);

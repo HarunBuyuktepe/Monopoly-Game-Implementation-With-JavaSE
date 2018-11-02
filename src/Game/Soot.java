@@ -1,10 +1,12 @@
 package Game;
 
 public class Soot extends MapBox {
+
     private int id;
     private String name;
     private double price;
     private double loan;
+
     Soot(int id,String name,double price,double loan){
         this.price=price;
         this.id=id;
@@ -24,6 +26,6 @@ public class Soot extends MapBox {
 
     @Override
     public void doAction(Player player) {
-
+        System.out.println("Update coming soon on soot...");
     }
 }

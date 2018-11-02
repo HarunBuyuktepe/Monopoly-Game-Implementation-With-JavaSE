@@ -1,8 +1,10 @@
 package Game;
 
 public class FreeParking extends MapBox {
+
     private int id;
     private String name;
+
     FreeParking(int id,String name){
         this.id=id;
         this.name=name;
@@ -20,6 +22,8 @@ public class FreeParking extends MapBox {
 
     @Override
     public void doAction(Player player) {
+
+        player.getCurrentPosition();
 
     }
 }

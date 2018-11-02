@@ -1,9 +1,12 @@
 package Game;
 
 public class StartingPoint extends MapBox {
+
     private int id;
     private String name;
+
     StartingPoint(int id,String name){
+
         this.id=id;
         this.name=name;
     }
@@ -20,6 +23,8 @@ public class StartingPoint extends MapBox {
 
     @Override
     public void doAction(Player player) {
-        player.addMoney(1000);
+
+        player.addMoney(20000);
+        System.out.println("Player" + player.getName() + " passed the starting point. Player gained 20000.0 ");
     }
 }
