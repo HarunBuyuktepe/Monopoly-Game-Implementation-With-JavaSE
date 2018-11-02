@@ -1,4 +1,4 @@
-package MonopolyGame;
+package Game;
 
 public class LuxuryTax extends TaxAdministration {
     LuxuryTax(int id, double tax,String name) {

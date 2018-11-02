@@ -1,4 +1,4 @@
-package MonopolyGame;
+package Game;
 
 public class District extends MapBox {
     private int id;

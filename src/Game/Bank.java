@@ -1,4 +1,4 @@
-package MonopolyGame;
+package Game;
 
 public class Bank extends Player {
     private int id;

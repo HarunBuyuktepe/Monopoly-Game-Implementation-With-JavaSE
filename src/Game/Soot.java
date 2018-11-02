@@ -1,4 +1,4 @@
-package MonopolyGame;
+package Game;
 
 public class Soot extends MapBox {
     private int id;
@@ -19,7 +19,7 @@ public class Soot extends MapBox {
 
     @Override
     public int getId() {
-        return 0;
+        return id;
     }
 
     @Override
