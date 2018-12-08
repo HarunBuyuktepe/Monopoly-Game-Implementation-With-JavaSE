@@ -1,0 +1,13 @@
+0 B 'Yurt disindaki yatirimlarin kazanc getirdi. Alman gereken miktar : 25000' 25000
+1 B 'Yazlik evlerinden birini sattin. Alman gereken miktar : 30000' 30000
+2 B 'Atin yarista birinci geldi! Alman gereken miktar 20000' 20000
+3 B 'Kodesten ucretsiz cik. Bu kart gerekli olana kadar saklanabilir.' 0
+4 B '"YILIN MILYONERI" odulunu kazandin! Alman gereken miktar 75000' 75000
+5 B '"SON ON YILIN BASARILI YONETICISI" secildin! Alman gereken miktar : 50000' 50000
+6 B 'Zenginler listesine girdin. Baslangic noktasina ilerle.' 0
+7 B 'Jet skini kiraya verdin! Alman gereken miktar : 15000' 15000
+8 B 'Soforun seni 5 hane ileri goturdu. Ilerle ve 15000 TL bahsis ode' 15000
+9 B 'Istedigin haneye gitmek icin birinci sinif biletin var! Hemen diledigin haneye ilerle' 0
+10 B 'Spor arabani sattin. Alman gereken miktar : 60000' 60000
+11 B 'Milyonlarinin vergisini ödemelisin! Odemen gereken miktar : 50000' 50000
+12 B 'Ozel jetini kiraya verdin. Alman gereken miktar : 25000' 25000

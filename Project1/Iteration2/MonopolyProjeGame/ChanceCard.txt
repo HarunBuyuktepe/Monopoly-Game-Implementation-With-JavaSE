@@ -1,0 +1,14 @@
+0 P 'Dostlarini cok luks bir yolculuga cikarttin! Her oyuncuya odeme yapman gereken miktar 15000' 15000
+1 P 'Bugun dogum gunun! Her oyuncudan alman gereken miktar' 30000
+2 P 'Cok akillica bir is anlasmanizdan kar ettin! Her oyuncudan alman gereken miktar 30000' 30000
+3 P 'Unlulerin partisine davet edildin! Sana eslik etmesi icin istedigin bir oyuncuya M40k ode.' 40000
+4 P 'Galaya davet edilmek icin onemli mevkilerdeki dostlarini kullandin! Sana eslik etmesi icin istedigin bir oyuncuya M50k ode.' 50000
+5 P 'Arkadaslarini cok sik bir restoranda agirladin! HER oyuncuya odeme yapman gereken miktar 10000' 10000
+6 B 'Dogru KODESe gir. Baslangic noktasindan gecme. Maasini alma.' 0
+7 B 'Alemlere dalip parani carcur ettin! Bankaya M100k ode!' 100000
+8 B 'Hava balonu yarisina katildin! M150k kazanmak icin atman gereken zar: Cift veya 8-12 arasi' 150000
+9 B 'Piyango biletini aldin! M100k kazanmak icin atman gereken zar: Cift veya 8-12 arasi' 100000
+10 B 'Kendi isini kuruyorsun! M150k almak icin atman gereken zar: Cift veya 8-12 arasi' 150000
+11 B 'Kendi ozel pistinde yarisiyorsun! M100k kazanmak icin atman gereken zar: Cift veya 8-12 arasi' 100000
+12 B 'Surat teknesi yarisina katildin! M50k kazanmak icin atman gereken zar: Cift veya 8-12 arasi' 50000
+13 B 'Hisse senetlerine yatirim yaptin! M100K almak icin atman gereken zar: Cift veya 8-12 arasi' 100000
