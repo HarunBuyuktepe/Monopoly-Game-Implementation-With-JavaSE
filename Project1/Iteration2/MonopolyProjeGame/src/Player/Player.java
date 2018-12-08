@@ -3,13 +3,12 @@ package Monopoly.Player;
 import Monopoly.Board.MapBox;
 import Monopoly.Dice;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class Player {
-    private ArrayList<MapBox> blocks=new ArrayList<>();
+    private ArrayList<MapBox> blocks=new ArrayList<>(); //Deed list
     private int id;
     private String name;
     private int totalTour = 0;
@@ -42,28 +41,22 @@ public class Player {
         totalTour++;
     }
 
-
-    public int tossDie(){//Toss the die for the Player
+    public int tossDie(){ //Toss the die for the Player
         int face=die.tossDie();
         return face;
     }
-
     public Money getMoney() {   //To know the Player's money
         return money;
     }
 
-
-
     /*-------------Money and Winner Control Method-------------*/
     public boolean inGame() {
-
         if (money.getMoney() < 0){
             setInGame(false);
         }
         else{
             setInGame(true);
         }
-
         return inGame;
     }
 
