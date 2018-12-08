@@ -8,42 +8,18 @@ import java.util.ArrayList;
 
 public class Board {
 
-    // MARK: Properties
     private String boardName;
     private ArrayList<MapBox> blocks;
 
-    // MARK: Constructors
     public Board() throws IOException {
 
         blocks = new ArrayList<>();
         getBlockStrings();
     }
 
-    // MARK: Encapsulation
-
-    public void setBoardName(String boardName) {
-        this.boardName = boardName;
-    }
-
-    public String getBoardName() {
-        return boardName;
-    }
-
-    public void setBlocks(ArrayList<MapBox> blocks) {
-        this.blocks = blocks;
-    }
-
-    public ArrayList<MapBox> getBlocks() {
-        return blocks;
-    }
-
-    // MARK: Utilities
     private void getBlockStrings() throws IOException {
-
         File file = new File("dist.txt");
-
         BufferedReader br = new BufferedReader(new FileReader(file));
-
         String st;
         while ((st = br.readLine()) != null)
         {
@@ -61,7 +37,6 @@ public class Board {
         String[] words = blockString.split(" ");
 
         int id = Integer.parseInt(words[0]);
-
         if(words[1].toLowerCase().contains("dist"))
         {
             String name = words[2];
@@ -74,49 +49,40 @@ public class Board {
             double rentAmount4 = Double.parseDouble(words[9]);
             block = new District(id,name,priceAmount,development,rentAmount0,rentAmount1 ,rentAmount2,rentAmount3,rentAmount4,null);
         }
-
         else if(words[1].toLowerCase().contains("ıncometax"))
         {
             double tax = Double.parseDouble(words[2]);
             block = new IncomeTax(id,tax,"Income Tax");
         }
-
         else if(words[1].toLowerCase().contains("luxurytax"))
         {
             double tax = Double.parseDouble(words[2]);
             block = new LuxuryTax(id,tax,"Luxury Tax");
         }
-
         else if(words[1].toLowerCase().contains("prison(visitor)"))
         {
             block = new Prison(id,"Prison Visitor");
         }
-
         else if(words[1].toLowerCase().contains("freeparking"))
         {
             block = new FreeParking(id,"Free Parking");
         }
-
         else if(words[1].toLowerCase().contains("goprison"))
         {
             block = new Prison(id,"Go Prison");
         }
-
         else if(words[1].toLowerCase().contains("chance"))
         {
             block = new ChanceCard(id,"Chance Card");
         }
-
         else if(words[1].toLowerCase().contains("publicfund"))
         {
             block = new PublicFundCard(id,"Public Fund Card");
         }
-
         else if(words[1].toLowerCase().contains("startingpoint"))
         {
             block = new StartingPoint(id,"Starting Point");
         }
-
         else if(words[1].toLowerCase().contains("soot"))
         {
             double price = Double.parseDouble(words[3]);
@@ -127,7 +93,6 @@ public class Board {
 
         blocks.add(block);
     }
-
     public ArrayList <MapBox> getMap()
     {
         return blocks;

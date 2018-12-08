@@ -1,8 +1,7 @@
 package Monopoly.Board;
 
 import Monopoly.Main;
-import Monopoly.Player.Player;
-import Monopoly.Player.Money;
+import Monopoly.Player.*;
 
 public class District extends MapBox {
 
@@ -89,8 +88,6 @@ public class District extends MapBox {
                 Main.HEA_Bank.payMoney(owner,rentAmount0);
                 System.out.println(player.getName() + " Payed : " + (int)(rentAmount0.getMoney()) + " ₺ To " + owner.getName()+" for rent.");
             }
-
-
 
         }
 

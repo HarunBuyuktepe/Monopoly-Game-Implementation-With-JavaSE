@@ -1,8 +1,7 @@
 package Monopoly.Board;
 
 import Monopoly.Main;
-import Monopoly.Player.Money;
-import Monopoly.Player.Player;
+import Monopoly.Player.*;
 
 public class LuxuryTax extends TaxAdministration {
 
@@ -13,7 +12,6 @@ public class LuxuryTax extends TaxAdministration {
 
     @Override
     public void doAction(Player player) {
-
         System.out.println("Luxury Tax. You Should Pay "+ (int)tax.getMoney() +" ₺");
         Main.HEA_Bank.takeMoney(player,tax);
     }

@@ -24,7 +24,6 @@ public class FreeParking extends MapBox {
 
     @Override
     public void doAction(Player player) {
-
         player.getCurrentPosition();
 
     }

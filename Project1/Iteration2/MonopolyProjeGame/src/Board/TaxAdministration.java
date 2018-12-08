@@ -1,6 +1,6 @@
 package Monopoly.Board;
 
-import Monopoly.Player.Player;
+import Monopoly.Player.*;
 
 public class TaxAdministration extends MapBox {
 
@@ -9,7 +9,6 @@ public class TaxAdministration extends MapBox {
     private int id;
 
     TaxAdministration(int id,double tax,String name){
-
         this.id=id;
         this.tax=tax;
         this.name=name;

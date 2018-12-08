@@ -1,8 +1,7 @@
 package Monopoly.Board;
 
 import Monopoly.Main;
-import Monopoly.Player.Money;
-import Monopoly.Player.Player;
+import Monopoly.Player.*;
 
 public class Soot extends MapBox {
 
@@ -42,11 +41,6 @@ public class Soot extends MapBox {
         return new Money(price.getMoney()/2);
     }
 
-    public void setId()
-    {
-        this.id = id;
-    }
-
     @Override
     public void doAction(Player player)
     {
@@ -71,12 +65,9 @@ public class Soot extends MapBox {
                 Main.HEA_Bank.takeMoney(player , loan);
                 System.out.println(player.getName() + " Pay : " + (int)(loan.getMoney()) + " ₺ (Rent For Visiting)");
             }
-
         }
-
         else     /* If Specified Soot Has Owner */
         {
-
             if(owner.equals(player))
             {
                 System.out.println("This is Your Own Soot!!");
@@ -88,9 +79,7 @@ public class Soot extends MapBox {
                 Main.HEA_Bank.payMoney(owner , rent);
                 System.out.println(player.getName() + " Payed : " + (int)(rent.getMoney()) + " ₺ To " + owner.getName() + " (For Rent)");
             }
-
         }
-
 
     }   /* End of doAction Method */
 }
