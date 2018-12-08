@@ -5,7 +5,6 @@ import Monopoly.Board.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -33,12 +32,10 @@ public class Main {
         ArrayList <Player> players = new ArrayList<>();
 
         int i = 1;
-
         while (i <= playerNum)
         {
             System.out.print("\nEnter " + i + ".Player" + " Name: ");
             String name = input.next();
-
             System.out.println(i + ".Player is Created ..");
             Player pl = new Player(i , name);
             pl.setPosition(0);
@@ -50,15 +47,6 @@ public class Main {
         System.out.println("\nPlayers are Ready To Play Monopoly ..");
         Board b = new Board();
         System.out.println("Board is Ready To Play Monopoly ..");
-        //System.out.print("\nIteration Number: ");
-
-        System.out.println();
-        ArrayList <MapBox> ourMap = b.getMap();
-
-
-
-
-
 
         while((players.size() >= 2 && players.size() <= 6)){    //  While # of Player Proper with Monopoly Rule && Iteration Number
 
@@ -76,7 +64,6 @@ public class Main {
                 {
                     diceManager.doThat(currentPl,b,0,false,currentPl.getCurrentPosition(), playerManager, players);
                 }
-
                 else
                     System.out.println(currentPl.getName() + " is at " + b.getMap().get(currentPl.getCurrentPosition()).getName());
 
@@ -84,8 +71,6 @@ public class Main {
                     break;
                 else
                 {
-
-
                     System.out.println("\n(Before Transaction) " + currentPl.getName() + " : " + (int)(currentPl.getMoney().getMoney()) + " ₺\n");
 
                     b.getMap().get(currentPl.getCurrentPosition()).doAction(currentPl);
@@ -103,12 +88,9 @@ public class Main {
                                 {
                                     playerManager.playerHasNoMoney(players.get(i),b);
 
-
                                     if(playerManager.alreadyHasNoMoney(players.get(i))){ /*If player has already debt,Game remove all record of player.*/
                                         System.out.println(players.get(i).getName() + " was bankrupt so out of game with debt "+players.get(i).getMoney().getMoney()+" ₺");
                                         players.remove(i);
-                                    /*System.out.println("\nNext Turn...\n\n");
-                                    break;*/
                                     }
 
                                 }
@@ -132,49 +114,27 @@ public class Main {
                     System.out.println("\nNext Turn...\n\n");
                 }
 
-
-
-
-
-
-
             }   /* End of for Loop */
-
 
         }   /* End of while Loop */
 
         System.out.println("\n------------------------------------");
-        System.out.println("\n\t\tGame End");
+        System.out.println("\n\t\t\tGame End");
         System.out.println("\n------------------------------------\n");
 
         String winnerName = players.get(0).getName();
         double winnerMoney = players.get(0).getMoney().getMoney();
 
-        for(i = 0; i < players.size(); i++)
-        {
-            System.out.println(players.get(i).getName() + " -> " + (int)(players.get(i).getMoney().getMoney()));
+        System.out.println("\n------------------------------------");
+        System.out.println("\n Winner : " + winnerName + " -> " +(int)winnerMoney+" ₺");
+        System.out.println("\n------------------------------------");
 
-         /*   if(players.get(i).getMoney().getMoney() > winnerMoney)
-            {
-                winnerName = players.get(i).getName();
-                winnerMoney = players.get(i).getMoney().getMoney();
+        for (int q=0;q<b.getMap().size();q++) {
+            if (b.getMap().get(q).getOwner()!="") {
+                System.out.println(b.getMap().get(q).getOwner() + "\t\tis owner of\t\t" + b.getMap().get(q).getName() + " .");
             }
-*/
-        }
-
-        System.out.println("\n------------------------------------");
-        System.out.println("\n Winner : " + winnerName + " -> " + (int)(winnerMoney));
-        System.out.println("\n------------------------------------");
-
-        for (int q=0;q<b.getMap().size();q++){
-
-            System.out.println("- "+b.getMap().get(q).getName()+"\t\t\t\t"+b.getMap().get(q).getOwner());
         }
 
     } /* End of Main Method */
 
-    public static void moneyCheck()
-    {
-
-    }
 }
